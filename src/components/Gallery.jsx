@@ -1,18 +1,18 @@
 const galleryItems = [
   {
-    image:
-      '/imagenes/estudio3.jpeg',
-    title: 'Sesiones en cabina'
+    image: "/imagenes/galeria1.jpeg",
+    title: "Cabina profesional",
+    text: "Espacio diseñado para sesiones con calidad y comodidad."
   },
   {
-    image:
-      '/imagenes/estudio1.jpeg',
-    title: 'Producción musical'
+    image: "/imagenes/galeria2.jpeg",
+    title: "Producción creativa",
+    text: "Ambiente ideal para crear, producir y desarrollar ideas."
   },
   {
-    image:
-      '/imagenes/estudio4.jpeg',
-    title: 'Artistas grabando'
+    image: "/imagenes/galeria3.jpeg",
+    title: "Sesiones de alto nivel",
+    text: "Todo preparado para capturar el mejor sonido."
   }
 ]
 
@@ -22,9 +22,9 @@ function Gallery() {
       <div className="container">
         <div className="section-head center">
           <span className="eyebrow">Galería</span>
-          <h2>Ambiente real de estudio</h2>
+          <h2>Conoce el espacio</h2>
           <p>
-            Una estética moderna, oscura y profesional para crear con enfoque.
+            Un vistazo al estudio, el ambiente y la vibra de cada sesión.
           </p>
         </div>
 
@@ -33,6 +33,7 @@ function Gallery() {
             <article className="gallery-card" key={item.title}>
               <img src={item.image} alt={item.title} />
               <h3>{item.title}</h3>
+              <p className="muted-text">{item.text}</p>
             </article>
           ))}
         </div>

@@ -12,8 +12,8 @@ function Hero() {
           </h1>
 
           <p>
-            Regístrate, elige tu fecha y reserva tus bloques de horas para grabar
-            en un estudio profesional con sonido de alto nivel.
+            Reserva tu sesión, elige tus horarios y graba en un estudio
+            profesional diseñado para artistas que buscan un sonido de alto nivel.
           </p>
 
           <div className="hero-buttons">
@@ -28,10 +28,10 @@ function Hero() {
 
         <div className="hero-visual">
           <div className="video-hero">
-           <video controls loop playsInline className="hero-video">
-  <source src="/imagenes/video1.mp4" type="video/mp4" />
-  Tu navegador no soporta video HTML5.
-</video>
+            <video controls loop playsInline muted className="hero-video">
+              <source src="/imagenes/video1.mp4" type="video/mp4" />
+              Tu navegador no soporta video HTML5.
+            </video>
 
             <div className="video-overlay">
               <span className="live-dot"></span>
